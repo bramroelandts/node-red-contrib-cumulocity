@@ -78,7 +78,7 @@ module.exports = function(RED) {
 				// Build request
 				var options = {
 					method: 'PUT',
-					url: "https://" + tenant + '.' + domain + basePath + n.alarmId,
+					url: "https://" + domain + basePath + n.alarmId,
 					headers: {
 						'Authorization': 'Basic ' + encodedCreds
 					},

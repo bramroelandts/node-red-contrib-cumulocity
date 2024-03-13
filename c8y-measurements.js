@@ -18,7 +18,7 @@ module.exports = function(RED) {
 		var tenant = this.config.tenant,
 			domain = this.config.host;
 
-	 var fullBase = tenant + "." + domain + basePath;
+	 var fullBase = domain + basePath;
 
 		this.ret = n.ret || "txt"; // default return type is text
 		if (RED.settings.httpRequestTimeout) {
